@@ -1,0 +1,20 @@
+require('./bootstrap');
+import { createApp } from 'vue';
+import Swiper from 'swiper/bundle';
+import ExampleComponent from './components/ExampleComponent.vue';
+import BannerComp from './components/BannerComp.vue';
+import ShopPage from './components/ShopPage.vue';
+import NewsActivity from './components/NewsAndActivity.vue';
+import InfoHome from './components/InfoHome.vue';
+import ProductHome from './components/ProductHome.vue';
+import RandProductSlide from './components/RandProductSlide.vue';
+
+const app = createApp({});
+app.component('randomProduct-slide', RandProductSlide);
+app.component('example-component', ExampleComponent);
+app.component('banner-comp', BannerComp);
+app.component('shop-page', ShopPage);
+app.component('news-activity', NewsActivity);
+app.component('info-home', InfoHome);
+app.component('pd-home', ProductHome);
+app.mount('#app');
